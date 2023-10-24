@@ -6,7 +6,7 @@ split_filename: mimiciv_icd10_split.feather
 code_column_names:
   - icd10_diag
   - icd10_proc
-max_length: 4000
+max_length: 4096
 
 
 

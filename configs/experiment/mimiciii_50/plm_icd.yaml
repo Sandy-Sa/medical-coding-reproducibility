@@ -32,7 +32,7 @@ data:
 
 text_transform:
   configs:
-    max_length: 3072
+    max_length: 4096
     truncation: true
 
 

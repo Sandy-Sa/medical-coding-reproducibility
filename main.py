@@ -2,6 +2,7 @@ import logging
 import math
 import os
 from pathlib import Path
+import torch
 
 import hydra
 from omegaconf import OmegaConf
@@ -29,13 +30,13 @@ LOGGER.setLevel(logging.INFO)
 
 def deterministic() -> None:
     """Run experiment deterministically. There will still be some randomness in the backward pass of the model."""
-    os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":16:8"
+    # os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":16:8"
 
-    import torch
+    # import torch
 
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True
-    torch.use_deterministic_algorithms(True)
+    # torch.backends.cudnn.benchmark = False
+    # torch.backends.cudnn.deterministic = True
+    # torch.use_deterministic_algorithms(True)
 
 
 @hydra.main(version_base=None, config_path="configs", config_name="config")
@@ -47,21 +48,23 @@ def main(cfg: OmegaConf) -> None:
 
     set_seed(cfg.seed)
 
-    # Check if CUDA_VISIBLE_DEVICES is set
-    if "CUDA_VISIBLE_DEVICES" not in os.environ:
-        if cfg.gpu != -1 and cfg.gpu is not None and cfg.gpu != "":
-            os.environ["CUDA_VISIBLE_DEVICES"] = (
-                ",".join([str(gpu) for gpu in cfg.gpu])
-                if isinstance(cfg.gpu, list)
-                else str(cfg.gpu)
-            )
+    # # Check if CUDA_VISIBLE_DEVICES is set
+    # if "CUDA_VISIBLE_DEVICES" not in os.environ:
+    #     if cfg.gpu != -1 and cfg.gpu is not None and cfg.gpu != "":
+    #         os.environ["CUDA_VISIBLE_DEVICES"] = (
+    #             ",".join([str(gpu) for gpu in cfg.gpu])
+    #             if isinstance(cfg.gpu, list)
+    #             else str(cfg.gpu)
+    #         )
 
-        else:
-            os.environ["CUDA_VISIBLE_DEVICES"] = ""
+    #     else:
+    #         os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # device = 'cuda'
+    print(torch.cuda.is_available())
     pprint(f"Device: {device}")
-    pprint(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
+    # pprint(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
 
     data = data_pipeline(config=cfg.data)
 

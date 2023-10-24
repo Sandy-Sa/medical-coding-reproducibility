@@ -3,7 +3,7 @@ defaults:
   - data: defaults
   - dataset: defaults
   - dataloader: defaults
-  - model: vanillaconv
+  - model: plm_icd
   - text_encoder: defaults
   - trainer: defaults
   - optimizer: adam

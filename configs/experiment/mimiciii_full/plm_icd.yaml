@@ -28,11 +28,11 @@ optimizer:
     lr: 5e-5
 
 data:
-  max_length: null
+  max_length: 4096
 
 text_transform:
   configs:
-    max_length: 3072
+    max_length: null
     truncation: true
   
 

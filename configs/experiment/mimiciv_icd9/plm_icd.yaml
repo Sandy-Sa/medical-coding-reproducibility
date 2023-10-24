@@ -24,7 +24,7 @@ trainer:
   threshold_tuning: true
   epochs: 20
   
-data.max_length: 4000
+data.max_length: 4096
 
 
 

@@ -6,7 +6,7 @@ split_filename: mimiciii_clean_splits.feather
 code_column_names:
   - icd9_diag
   - icd9_proc
-max_length: 4000
+max_length: 4096
 
 
 
