@@ -6,14 +6,11 @@ appdirs==1.4.4
 astropy==5.3.4
 asttokens==2.4.0
 attrs==23.1.0
-automatic-medical-coding==1.0.0
 backcall==0.2.0
 black==23.9.1
 blake3==0.3.3
 bqplot==0.12.40
 branca==0.6.0
-bzip2==1.0.8
-ca-certificates==2023.08.22
 cachetools==5.3.1
 certifi==2023.7.22
 charset-normalizer==3.3.0
@@ -65,12 +62,6 @@ jupyter-client==8.4.0
 jupyter-core==5.4.0
 jupyterlab-widgets==3.0.9
 kiwisolver==1.4.5
-ld_impl_linux-64==2.38
-libffi==3.4.4
-libgcc-ng==11.2.0
-libgomp==11.2.0
-libstdcxx-ng==11.2.0
-libuuid==1.41.5
 llvmlite==0.41.0
 locket==1.0.0
 markdown-it-py==3.0.0
@@ -81,9 +72,7 @@ mdurl==0.1.2
 miniful==0.0.6
 mpmath==1.3.0
 mypy-extensions==1.0.0
-ncurses==6.4
 nest-asyncio==1.5.8
-networkx==3.1
 numba==0.58.0
 numpy==1.25.2
 nvidia-cublas-cu12==12.1.3.1
@@ -99,7 +88,6 @@ nvidia-nccl-cu12==2.18.1
 nvidia-nvjitlink-cu12==12.2.140
 nvidia-nvtx-cu12==12.1.105
 omegaconf==2.3.0
-openssl==3.0.11
 packaging==23.2
 pandas==2.1.1
 parso==0.8.3
@@ -126,7 +114,6 @@ pyfume==0.2.25
 pygments==2.16.1
 pyparsing==3.1.1
 pytest==7.4.2
-python==3.10.13
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 python-utils==3.8.1
@@ -134,7 +121,6 @@ pythreejs==2.4.2
 pytz==2023.3.post1
 pyyaml==6.0.1
 pyzmq==25.1.1
-readline==8.2
 regex==2023.10.3
 requests==2.31.0
 rich==13.6.0
@@ -150,13 +136,10 @@ six==1.16.0
 smart-open==6.4.0
 smmap==5.0.1
 sniffio==1.3.0
-sqlite==3.41.2
 stack-data==0.6.3
 starlette==0.27.0
-sympy==1.12
 tabulate==0.9.0
 threadpoolctl==3.2.0
-tk==8.6.12
 tokenizers==0.14.1
 tomli==2.0.1
 toolz==0.12.0
@@ -168,7 +151,6 @@ traittypes==0.2.1
 transformers==4.34.0
 triton==2.1.0
 typing-extensions==4.8.0
-tzdata==2023.3
 urllib3==2.0.6
 uvicorn==0.23.2
 uvloop==0.18.0
@@ -185,10 +167,6 @@ watchfiles==0.21.0
 wcwidth==0.2.8
 websockets==11.0.3
 wget==3.2
-wheel==0.41.2
 widgetsnbextension==4.0.9
 xarray==2023.9.0
 xyzservices==2023.10.0
-xz==5.4.2
-zipp==3.17.0
-zlib==1.2.13
