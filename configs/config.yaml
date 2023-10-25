@@ -141,11 +141,6 @@ lookup:
     code_column: null
     desc_column: null
 callbacks:
-- name: WandbCallback
-  configs:
-    project: automatic-medical-coding
-    entity: null
-    dir: /data/je
 - name: SaveBestModelCallback
   configs:
     split: val
