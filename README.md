@@ -20,8 +20,15 @@ Official source code repository for the SIGIR 2023 paper [Automated Medical Codi
 ```
 
 
+## Assignment related changes
+
+### Colab demo
+
+Due to licensing agreement of the MIMIC-III and MIMIC-IV, I am unable to upload the datasets for this assignment. Both dataset can be obtained from [physionet website](https://physionet.org/content/?topic=mimic) after completing required training.
+
+A demo data containing 50 row of MIMIC-III v1.4 data with the text shuffled is included in the repo in order to demostrate the assignment code on Colab. The current `config/config.yaml` file is set to use this demo data to train a downloaded version of [RoBERTa-base-PM-M3-Voc](https://dl.fbaipublicfiles.com/biolm/RoBERTa-base-PM-M3-Voc-hf.tar.gz). If wish to run any experiments other than mimiciii_clean, please change the config.yaml accordingly. 
+
 ## How to reproduce results
-### Setup Colab environment 
 
 ### Prepare MIMIC-III
 This code has been developed on MIMIC-III v1.4. 
