@@ -4,7 +4,6 @@ aplus
 appdirs
 astropy
 asttokens
-attrs
 backcall
 black
 blake3
@@ -23,7 +22,6 @@ decorator
 docker-pycreds
 exceptiongroup
 executing
-fastapi
 filelock
 fonttools
 frozendict
@@ -129,7 +127,6 @@ tqdm
 traitlets
 traittypes
 transformers
-typing_extensions
 urllib3
 uvicorn
 uvloop
@@ -145,7 +142,6 @@ wandb
 watchfiles
 wcwidth
 websockets
-wget
 widgetsnbextension
 xarray
 xyzservices
