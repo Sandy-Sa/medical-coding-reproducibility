@@ -29,8 +29,8 @@ from src.settings import (
 )
 
 CODE_SYSTEMS = [
-    ("ICD9-DIAG", "DIAGNOSES_ICD.csv.gz", "ICD9_CODE", "icd9_diag"),
-    ("ICD9-PROC", "PROCEDURES_ICD.csv.gz", "ICD9_CODE", "icd9_proc"),
+    ("ICD9-DIAG", "DIAGNOSES_ICD.csv", "ICD9_CODE", "icd9_diag"),
+    ("ICD9-PROC", "PROCEDURES_ICD.csv", "ICD9_CODE", "icd9_proc"),
 ]
 MIN_TARGET_COUNT = 10  # Minimum number of times a code must appear to be included
 preprocessor = TextPreprocessor(
@@ -65,10 +65,11 @@ def get_duplicated_icd9_proc_codes() -> set:
         set: The duplicated ICD9-PROC codes
     """
     icd9_proc_codes = pd.read_csv(
-        download_dir / "D_ICD_PROCEDURES.csv.gz",
-        compression="gzip",
+        download_dir / "D_ICD_PROCEDURES.csv",
+        # compression="gzip",
         dtype={"ICD9_CODE": str},
     )
+    icd9_proc_codes.columns = icd9_proc_codes.columns.str.upper()
     return set(
         icd9_proc_codes[icd9_proc_codes["ICD9_CODE"].astype(str).duplicated()][
             "ICD9_CODE"

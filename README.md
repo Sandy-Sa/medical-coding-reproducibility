@@ -1,5 +1,7 @@
 # ⚕️Automated Medical Coding on MIMIC-III and MIMIC-IV: A Critical Review and Replicability Study
 
+This is an adaptation of the following code repository for USYD HTIN5005 assignment 2. This version of the code only reporduce the results for PLM-ICD model.
+
 Official source code repository for the SIGIR 2023 paper [Automated Medical Coding on MIMIC-III and MIMIC-IV: A Critical Review and Replicability Study](https://dl.acm.org/doi/10.1145/3539618.3591918)
 
 
@@ -18,25 +20,8 @@ Official source code repository for the SIGIR 2023 paper [Automated Medical Codi
 ```
 
 
-
-## Introduction 
-Automatic medical coding is the task of automatically assigning diagnosis and procedure codes based on discharge summaries from electronic health records. This repository contains the code used in the paper Automated medical coding on MIMIC-III and MIMIC-IV: A Critical Review and Replicability Study. The repository contains code for training and evaluating medical coding models and new splits for MIMIC-III and the newly released MIMIC-IV. The following models have been implemented:
-
-| Model | Paper | Original Code |
-| ----- | ----- | ------------- |
-| CNN   |[Explainable Prediction of Medical Codes from Clinical Text](https://aclanthology.org/N18-1100/) | [link](https://github.com/jamesmullenbach/caml-mimic) | 
-| Bi-GRU|[Explainable Prediction of Medical Codes from Clinical Text](https://aclanthology.org/N18-1100/) | [link](https://github.com/jamesmullenbach/caml-mimic) | 
-|CAML   |[Explainable Prediction of Medical Codes from Clinical Text](https://aclanthology.org/N18-1100/) | [link](https://github.com/jamesmullenbach/caml-mimic) | 
-| MultiResCNN | [ICD Coding from Clinical Text Using Multi-Filter Residual Convolutional Neural Network](https://arxiv.org/pdf/1912.00862.pdf) | [link](https://github.com/foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network) |
-| LAAT | [A Label Attention Model for ICD Coding from Clinical Text](https://arxiv.org/abs/2007.06351) | [link](https://github.com/aehrc/LAAT) |
-| PLM-ICD | [PLM-ICD: Automatic ICD Coding with Pretrained Language Models](https://aclanthology.org/2022.clinicalnlp-1.2/) | [link](https://github.com/MiuLab/PLM-ICD) |
-
-The splits are found in `files/data`. The splits are described in the paper.
-
 ## How to reproduce results
-### Setup Conda environment
-1. Create a conda environement `conda create -n coding python=3.10`
-2. Install the packages `pip install -e .`
+### Setup Colab environment 
 
 ### Prepare MIMIC-III
 This code has been developed on MIMIC-III v1.4. 

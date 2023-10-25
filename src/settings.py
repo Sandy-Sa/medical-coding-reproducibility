@@ -9,7 +9,7 @@ TARGET_COLUMN = "target"
 SUBJECT_ID_COLUMN = "subject_id"
 
 DOWNLOAD_DIRECTORY_MIMICIII = (
-    "/Users/full_of_bugs/data/mimic-data/mimic-iii-clinical-database-1.4"  # Path to the MIMIC-III data. Example: ~/mimiciii/1.4
+    "/content/physionet.org/files/mimiciii-demo/1.4"  # Path to the MIMIC-III data. Example: ~/mimiciii/1.4
 )
 DOWNLOAD_DIRECTORY_MIMICIV = "/Users/full_of_bugs/data/mimic-data/mimic-iv-2.2"  # Path to the MIMIC-IV data. Example: ~/physionet.org/files/mimiciv/2.2
 DOWNLOAD_DIRECTORY_MIMICIV_NOTE = "/Users/full_of_bugs/data/mimic-data/mimic-iv-note-deidentified-free-text-clinical-notes-2.2"  # Path to the MIMIC-IV-Note data. Example: ~/physionet.org/files/mimic-iv-note/2.2
