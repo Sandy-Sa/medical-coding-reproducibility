@@ -8,11 +8,9 @@ TEXT_COLUMN = "text"
 TARGET_COLUMN = "target"
 SUBJECT_ID_COLUMN = "subject_id"
 
-DOWNLOAD_DIRECTORY_MIMICIII = (
-    "/content/physionet.org/files/mimiciii-demo/1.4"  # Path to the MIMIC-III data. Example: ~/mimiciii/1.4
-)
-DOWNLOAD_DIRECTORY_MIMICIV = "/Users/full_of_bugs/data/mimic-data/mimic-iv-2.2"  # Path to the MIMIC-IV data. Example: ~/physionet.org/files/mimiciv/2.2
-DOWNLOAD_DIRECTORY_MIMICIV_NOTE = "/Users/full_of_bugs/data/mimic-data/mimic-iv-note-deidentified-free-text-clinical-notes-2.2"  # Path to the MIMIC-IV-Note data. Example: ~/physionet.org/files/mimic-iv-note/2.2
+DOWNLOAD_DIRECTORY_MIMICIII = "/datasets/mimic/mimic-iii-clinical-database-1.4"  # Path to the MIMIC-III data. Example: ~/mimiciii/1.4
+DOWNLOAD_DIRECTORY_MIMICIV = "/datasets/mimic/mimic-iv-2.2"  # Path to the MIMIC-IV data. Example: ~/physionet.org/files/mimiciv/2.2
+DOWNLOAD_DIRECTORY_MIMICIV_NOTE = "/datasets/mimic/mimic-iv-note-deidentified-free-text-clinical-notes-2.2"  # Path to the MIMIC-IV-Note data. Example: ~/physionet.org/files/mimic-iv-note/2.2
 
 
 DATA_DIRECTORY_MIMICIII_FULL = OmegaConf.load("configs/data/mimiciii_full.yaml").dir
@@ -21,7 +19,7 @@ DATA_DIRECTORY_MIMICIII_CLEAN = OmegaConf.load("configs/data/mimiciii_clean.yaml
 DATA_DIRECTORY_MIMICIV_ICD9 = OmegaConf.load("configs/data/mimiciv_icd9.yaml").dir
 DATA_DIRECTORY_MIMICIV_ICD10 = OmegaConf.load("configs/data/mimiciv_icd10.yaml").dir
 
-PROJECT = "<your project name>" # this variable is used for genersating plots and tables from wandb
+PROJECT = "<your project name>"  # this variable is used for genersating plots and tables from wandb
 EXPERIMENT_DIR = "files/"  # Path to the experiment directory. Example: ~/experiments
 PALETTE = {
     "PLM-ICD": "#E69F00",
